@@ -6,8 +6,8 @@ import Header from './components/header';
 function App() {
   return (
     <MyProvider>
-    <div className="container-fluid">
-    <div className='box'>
+    <div className="container">
+    <div className='box w-sm-100 w-75 mx-auto'>
       <Header />
       <Content />
     </div>

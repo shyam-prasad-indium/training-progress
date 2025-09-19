@@ -35,10 +35,10 @@ export default function Header() {
             }
         }
     return(
-        <header>
-        <nav className="container section-header row justify-content-between">
-            <button type='button' className="btn btn--prev px-md-2 px-sm-1 col-md-2 col-sm-2" onClick={handlePrev}>⬅️ Previous Day</button>
-            <div className = 'header-title center-text col-md-8 col-sm-8'>
+        <header className='container-fluid'>
+        <nav className="px-4 section-header row justify-content-between">
+            <button type='button' className="btn btn--prev align-self-md-center p-3 text-center col-2" onClick={handlePrev}>⬅️ Previous Day</button>
+            <div className = 'header-title center-text my-2 col-8'>
             <h1 className="primary">
                 {date || 'Select Course'}
             </h1>
@@ -46,7 +46,7 @@ export default function Header() {
                 Day 1 of 15 • {subject} Module • Weekdays Only
             </p>
             </div>
-            <button type='button' className="btn btn--next px-md-2 px-sm-1 col-md-2 col-sm-2" onClick={handleNext}>Next Day ➡️</button>
+            <button type='button' className="btn btn--next align-self-md-center p-3 col-2" onClick={handleNext}>Next Day ➡️</button>
         </nav>
         </header>
     )
