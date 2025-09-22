@@ -1,6 +1,6 @@
 import { useValues } from '../assets/context';
 import './header.css';
-import '../app.css'
+import '../App.css'
 
 export default function Header() {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
