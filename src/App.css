@@ -5,3 +5,34 @@
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
+@media (max-width : 59em) {
+    .primary {
+    font-size: 1.8rem;
+    }
+    .header-subheading {
+        font-size: 1rem;
+    }
+    .section-heading{
+    font-size: 1.4rem;
+    }
+    .section-box--title {
+    font-size: 1.2rem;
+    }
+    .section-box-progress {
+        font-size: 1rem;
+    }
+    .box {
+    width: 100% !important;
+  }
+}
+@media (max-width : 44em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+@media (max-width : 34em) {
+    html {
+        font-size: 50%;
+    }
+}

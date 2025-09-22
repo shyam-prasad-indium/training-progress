@@ -1,5 +1,6 @@
     import { mockData, subject, type schedule } from '../assets/mockData'
     import './content.css'
+    import '../app.css'
     import { useValues } from '../assets/context'
     import { useEffect, useState } from 'react';
 

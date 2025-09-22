@@ -14,7 +14,7 @@
 }
 .section-heading{
     font-size: 1.6rem;
-    line-height: 1.05;
+    /* line-height: 1.05; */
 }
 .section-boxes{
     /* display: flex; */

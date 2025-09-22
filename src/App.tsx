@@ -7,7 +7,7 @@ function App() {
   return (
     <MyProvider>
     <div className="container">
-    <div className='box w-sm-100 w-75 mx-auto'>
+    <div className='w-75 mx-auto box'>
       <Header />
       <Content />
     </div>

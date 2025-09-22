@@ -1,5 +1,6 @@
 import { useValues } from '../assets/context';
 import './header.css';
+import '../app.css'
 
 export default function Header() {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -37,7 +38,7 @@ export default function Header() {
     return(
         <header className='container-fluid'>
         <nav className="px-4 section-header row justify-content-between">
-            <button type='button' className="btn btn--prev align-self-md-center p-3 text-center col-2" onClick={handlePrev}>⬅️ Previous Day</button>
+            <button type='button' className="btn btn--prev align-self-md-center p-sm-1 p-md-3 text-center col-2" onClick={handlePrev}>⬅️ Previous Day</button>
             <div className = 'header-title center-text my-2 col-8'>
             <h1 className="primary">
                 {date || 'Select Course'}
@@ -46,7 +47,7 @@ export default function Header() {
                 Day 1 of 15 • {subject} Module • Weekdays Only
             </p>
             </div>
-            <button type='button' className="btn btn--next align-self-md-center p-3 col-2" onClick={handleNext}>Next Day ➡️</button>
+            <button type='button' className="btn btn--next align-self-md-center p-sm-1 p-md-3 col-2" onClick={handleNext}>Next Day ➡️</button>
         </nav>
         </header>
     )
