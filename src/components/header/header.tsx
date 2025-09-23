@@ -1,6 +1,6 @@
-import { useValues } from '../assets/context';
+import { useValues } from '../../assets/context';
 import './header.css';
-import '../App.css'
+import '../../App.css'
 
 export default function Header() {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -41,9 +41,9 @@ export default function Header() {
             <button type='button' className="btn btn--prev align-self-md-center p-sm-1 p-md-3 text-center col-2" onClick={handlePrev}>⬅️ Previous Day</button>
             <div className = 'header-title center-text my-2 col-8'>
             <h1 className="primary">
-                {date || 'Select Course'}
+                <strong>{date || 'Select Course'}</strong>
             </h1>
-            <p className="header-subheading">
+            <p className="subheading">
                 Day 1 of 15 • {subject} Module • Weekdays Only
             </p>
             </div>

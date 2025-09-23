@@ -1,7 +1,7 @@
 import './App.css'
 import MyProvider from './assets/context';
-import Content from './components/content';
-import Header from './components/header';
+import Content from './components/content/content';
+import Header from './components/header/header';
 
 function App() {
   return (

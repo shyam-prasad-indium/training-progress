@@ -1,0 +1,16 @@
+/* Overview */
+#overview{
+    background-color: #FEF4AE;
+    border: 2px solid #FEF086;
+}
+#overview-heading{
+    color: #92400E;
+}
+#overview-title{
+    color : #4C4ABF;
+}
+.active-box {
+    transform: scale(1.04);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}

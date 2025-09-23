@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+.center-text {
+    text-align: center;
+}
+.primary {
+    color: #4C4ABF;
+}
+
+.section-header{
+    background: #FFFFFF;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(249, 249, 249, 1) 30%, rgba(248, 248, 248, 1) 70%, rgba(247, 247, 247, 1) 100%);
+    padding-top: 4.2rem;
+    padding-bottom: 4.2rem;
+    border-bottom: 1px solid rgba(247, 247, 247, 1);
+}
+.btn--prev {
+    background-color: #9CA3AF;
+}
+.btn--next {
+    background: #B854FF;
+    background: linear-gradient(310deg, #B854FF,#713DEB,#6141E8, #5544E6);
+}
