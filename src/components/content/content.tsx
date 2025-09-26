@@ -9,11 +9,11 @@
     export default function Content() {
         const { selectedValue, setSelectedValue, index } = useValues();
         const [currentPage, setCurrentPage] = useState<schedule | undefined>(undefined);
-        const [activeBox, setActiveBox] = useState<number | undefined>(undefined);
+        const [activeSubject, setActiveSubject] = useState<number | undefined>(undefined);
         const handleSelected = (event: string, index: number) => {
             const filteredSubject = mockData.filter((e) => e.name === event)
             setSelectedValue(filteredSubject);
-            setActiveBox(index)
+            setActiveSubject(index)
         }
         useEffect(() => {
             if(selectedValue) {
@@ -30,8 +30,8 @@
                     <div className="p-4 row justify-content-center">
                         {subject.map((item, index) => (
                             <div key = {index} className={`section-box p-3 m-2 col-md col-sm-5
-                                ${activeBox === index ? 'active-box' : ''}`
-                            }
+                                ${activeSubject === index ? 'active-subject-box' : ''}`
+                            } id = 'subject-box'
                             onClick={() => handleSelected(item, index)} data-subject = {index}>
                             <h3 className="section-box--title" id = "overview-title"><b>{item}</b></h3>
                             <p className="subheading">Not Started</p>
@@ -39,7 +39,7 @@
                         ))}
                     </div>
             </section>
-            {selectedValue && <SubjectSection selectedValue = {selectedValue}/>}
+            {selectedValue && <SubjectSection selectedValue = {selectedValue} index = {index}/>}
             {selectedValue && <TableSection currentPage = {currentPage} />}
         </main>
         )
